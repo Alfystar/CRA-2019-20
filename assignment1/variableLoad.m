@@ -1,6 +1,5 @@
 clear variable
 clc
-s= tf('s');
 
 % Sistem Param
 a = 1; b = 2;
