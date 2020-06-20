@@ -8,10 +8,6 @@ theta = [a;b];
 a0 = 0; b0 = 0;
 thetaZero = [a0;b0];
 
-% Sin var a
-a_ampl = 0.9;
-a_varFreq = 100; %2*pi/(24*3600);
-
 % Error size
 eMax = 0.1;
 
