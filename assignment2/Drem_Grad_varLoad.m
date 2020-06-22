@@ -3,10 +3,10 @@ clc
 
 % Sistem Param
 a = 2; b = 1;
-theta = [a;b];
+theta = [b;a];
 
-a0 = 0; b0 = 0;
-thetaZero = [a0;b0];
+a0 = 0.2; b0 = -1;  %a0 = 0.2; b0 = -1; Adatte per la proiezione, se a troppo vicina, rallenta troppo
+thetaZero = [b0;a0];
 
 % Error size
 eMax = 0.1;
