@@ -26,4 +26,4 @@ d0 = [aD1;0;aD2];
 
 x0=[0;1;0;1];
 
-time = wD2^-1*2*pi*10; % Tempo parametrico di Simulazione
+time = wD2^-1*2*pi*4; % Tempo parametrico di Simulazione
