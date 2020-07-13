@@ -13,45 +13,12 @@ axis([xMin xMax yMin yMax]);
 
 % disegniamo lo sfondo della scena
 GND = fill([xMin xMin xMax xMax],[0 yMin yMin 0],hex2Vet('#0B6623'));
-% GND. = hex2Vet('#0B6623');
 GND.LineWidth = 1;
 
 lCart=1; hCart = 0.5;
 lBar = 1; ratiusBall = 0.05;
 CartSize = [lCart hCart lBar ratiusBall];
 
-% scene([0 1 0 0],[0 0 0],1,CartSize);
-
-% STATE = zeros(4,5);
-% STATE(2,1)=1;
-% STATE(4,1)=deg2rad(10);
-% STATE(2,2)=2;
-% STATE(4,2)=deg2rad(20);
-% STATE(2,3)=3;
-% STATE(4,3)=deg2rad(10);
-% STATE(2,4)=4;
-% STATE(4,4)=deg2rad(0);
-% STATE(2,5)=3.5;
-% STATE(4,5)=deg2rad(-10);
-
-% D = zeros(3,5);
-% D(2,1)=1;
-% D(1,1)=1;
-% D(2,2)=2;
-% D(1,2)=2;
-% D(2,3)=3;
-% D(1,3)=3;
-% D(2,4)=4;
-% D(1,4)=1;
-% D(2,5)=3.5;
-% D(1,5)=-1;
-% 
-% u = zeros(1,5);
-% u(1)=1;
-% u(2)=2;
-% u(3)=-3;
-% u(4)=-4;
-% u(5)=3.5;
 
 STATE = out.X.Data;
 D = out.D.Data;
