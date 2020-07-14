@@ -26,7 +26,7 @@ U = out.U.Data;
 t = [0.01;diff(out.tout)];
 
 for i=1:length(STATE)
-scene(STATE(i,:),D(i,:),U(i),t(i),CartSize);
+scene(STATE(i,:),D(i,:),U(i),0.3,CartSize);
 end
 
 

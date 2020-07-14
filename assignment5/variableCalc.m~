@@ -10,7 +10,7 @@ wD2=1;   % Freq d2
 aD1=10;
 wD1=10;
 
-% Parametri delle matrici
+% 
 l=1; M=1;F=1;g=9.81;
 run("Matrix.m")
 
@@ -24,9 +24,8 @@ bd = zeros(3,1);
 cd = [0 1 0; 0 0 1];   % Solo stato sinusoidale
 dd = [0;0];
 
-% d0 = [aD1;0;aD2];
-d0 = [0;0;0];
+d0 = [aD1;0;aD2];
 
-x0=[0;0;0;0.0001];
+x0=[0;1;0;1];
 
-time = wD2^-1*2*pi*2; % Tempo parametrico di Simulazione
+time = wD2^-1*2*pi*4; % Tempo parametrico di Simulazione
