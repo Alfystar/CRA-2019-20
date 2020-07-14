@@ -11,7 +11,7 @@ aD1=10;
 wD1=10;
 
 % Parametri delle matrici
-l=1; M=1;F=1;g=9.81;
+l=1; M=1;F=1;g=9.81;lam=-1;
 run("Matrix.m")
 
 cAll=eye(length(Alin));
