@@ -24,9 +24,9 @@ bd = zeros(3,1);
 cd = [0 1 0; 0 0 1];   % Solo stato sinusoidale
 dd = [0;0];
 
-% d0 = [aD1;0;aD2];
-d0 = [0;0;0];
+d0 = [aD1;0;aD2];
+% d0 = [0;0;0];
 
-x0=[0;0;0;0.0001];
+x0=[0;0;0;0.5];
 
-time = wD2^-1*2*pi*2; % Tempo parametrico di Simulazione
+time = wD2^-1*2*pi*20; % Tempo parametrico di Simulazione

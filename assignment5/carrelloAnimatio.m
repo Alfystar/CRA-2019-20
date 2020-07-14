@@ -16,8 +16,10 @@ GND = fill([xMin xMin xMax xMax],[0 yMin yMin 0],hex2Vet('#0B6623'));
 GND.LineWidth = 1;
 
 lCart=1; hCart = 0.5;
+
 lBar = 1; ratiusBall = 0.05;
 CartSize = [lCart hCart lBar ratiusBall];
+
 
 
 STATE = out.X.Data;
@@ -26,7 +28,7 @@ U = out.U.Data;
 t = [0.01;diff(out.tout)];
 
 for i=1:length(STATE)
-scene(STATE(i,:),D(i,:),U(i),0.3,CartSize);
+scene(STATE(i,:),D(i,:),U(i),t(i),CartSize);
 end
 
 
