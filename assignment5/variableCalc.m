@@ -27,6 +27,6 @@ dd = [0;0];
 d0 = [aD1;0;aD2];
 % d0 = [0;0;0];
 
-x0=[0;1;0;0.3];
+x0=[0;1;0;0.7];
 
-time = wD2^-1*2*pi*5; % Tempo parametrico di Simulazione
+time = wD2^-1*2*pi*10; % Tempo parametrico di Simulazione
