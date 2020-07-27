@@ -10,6 +10,7 @@ thetaZero = [b0;a0];
 
 % Error size
 eMax = 0.1;
+eMean = 0.1;
 
 % Filter
 % Funx Trasf base
