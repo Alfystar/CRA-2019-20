@@ -11,3 +11,5 @@ a_varFreq = 10; %2*pi/(24*3600);
 
 % Error size
 eMax = 0.4;
+
+eMean =0.4;
