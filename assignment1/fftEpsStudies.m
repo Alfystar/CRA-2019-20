@@ -1,9 +1,14 @@
+% NOTA simulazione DEVE essere a tempo fisso
 figure(1)
 clf
 
 ax(1) = subplot(2,1,1);
-Y = fft(out.eps1_p.Data);
 L = length(out.eps1_p.Data);
+L = floor(L/2);
+data = out.eps1_p.Data(L:end);
+
+Y = fft(data);
+L = length(data);
 P2 = abs(Y/L);
 P1 = P2(1:L/2+1);
 P1(2:end-1) = 2*P1(2:end-1);
@@ -18,8 +23,13 @@ xlabel('f (Hz)')
 ylabel('|P1(f)|')
 
 ax(2) = subplot(2,1,2);
+
+L = length(out.eps1_p.Data);
+L = floor(L/2);
+data = out.eps1_sp.Data(L:end);
+
 Y = fft(out.eps1_sp.Data);
-L = length(out.eps1_sp.Data);
+L = length(data);
 P2 = abs(Y/L);
 P1 = P2(1:L/2+1);
 P1(2:end-1) = 2*P1(2:end-1);
